@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# 🥗 Meal Planner Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, simple, and responsive **React + Vite** web application that helps users **create meal plans** using ingredient-based recipe suggestions. Built to be lightweight, reliable, and easily expandable — perfect for personal use or as a base for larger projects.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Purpose
 
-## Expanding the ESLint configuration
+This app is designed to:
+- Help users make the most of ingredients they already have
+- Generate quick, low-effort meal ideas
+- Build and manage weekly meal plans
+- Provide an enjoyable, fast, and clean user interface for planning meals
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Tech | Purpose |
+|------|---------|
+| **React + Vite** | Modern frontend framework with fast dev build and hot module reload |
+| **TypeScript** | Type safety and better tooling for scalable development |
+| **Tailwind CSS** | Utility-first styling for clean and responsive UI |
+| **GitHub Pages** | Free and easy deployment for hosting the static site |
+| **Local JSON data** | Fast and backend-free storage for recipe data |
+| *(optional)* React Router | For multiple pages (Home, Planner, Pantry, etc.) |
+| *(optional)* Framer Motion | For polished animations and transitions |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🌱 Potential Expansions
+
+- ✅ Pantry ingredient matcher
+- ✅ Weekly meal planner with drag-and-drop or day-based assignment
+- ✅ Shopping list generator
+- 🔄 User recipe input form
+- 🔄 Recipe tagging and search filters
+- 🔄 Firebase or Supabase backend for real-time data
+- 🌐 Schema.org microdata for SEO optimization
+
+---
+
+## 👨‍💻 Developer
+
+Built and maintained by a single developer as a passion project to simplify home cooking and promote better planning.
+
+If you're interested in contributing, feel free to fork, suggest features, or open pull requests!
+
+---
+
+## 🛣️ Setup & Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/meal-planner.git
+cd meal-planner
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
